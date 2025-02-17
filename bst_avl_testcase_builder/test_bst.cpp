@@ -1094,7 +1094,7 @@ TEST(AVL, LargeRandomInsertRemove) {
 		int random = rand();
 		testTree.insert(std::make_pair(random, random));
 		items.insert(random);
-		//EXPECT_TRUE(verifyAVL(testTree));
+		EXPECT_TRUE(verifyAVL(testTree));
 		//std::cout << "insert: " << counter << "\n";
 	}
 
@@ -1119,7 +1119,6 @@ TEST(AVL, LargeRandomInsertRemove) {
 	EXPECT_TRUE(testTree.empty());
 }
 
-// credits to Kathy
 TEST(AVL, InClassExcercise)
 {
     // This is from Lecture 24: Splay Trees
@@ -1144,7 +1143,7 @@ TEST(AVL, InClassExcercise)
     bob.insert(std::make_pair(8,8));
 
     // Makes sure 8 is child of 7
-    // EXPECT_EQ(8, bob.root_->getLeft()->getRight()->getRight()->getRight()->getKey());
+    //EXPECT_EQ(8, bob.root_->getLeft()->getRight()->getRight()->getRight()->getKey());
     EXPECT_EQ(6, bob.root_->getKey());
     EXPECT_EQ(8, bob.root_->getRight()->getLeft()->getRight()->getKey());
 
@@ -1176,7 +1175,6 @@ TEST(AVL, InClassExcercise)
 
 }
 
-//Credit to Allison
 TEST(AVL, Single_Rotate_Right)
 {
 	AVLTree<int, int> avl;
@@ -1309,8 +1307,6 @@ for (int i = 0; i < 100; i++)
     AVLTree<int, int> testTree;
     std::set<int> items;
 
-    //Add 1000 items
-    //BREAKS AT 254 RAHHHHHHH
     for(size_t counter = 0; counter < 6; counter++)
     {
         int random = rand();

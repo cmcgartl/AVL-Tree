@@ -1,5 +1,3 @@
-# CS104 HW6 BST/AVL Test Builder
-
 ## An Introduction to Google Test (Gtest)
 
 Gtest is a framework released by google for testing c++ programs. It is one of the tools we have been using to test your code, so it may look familiar from labs and testing suites.
@@ -46,7 +44,7 @@ What they check: The bst/avl properities of your trees. For checkBST, it will co
 
 
 ## Running the testcases
-1. Copy this directory into your `hw6` folder
+1. Copy this directory into a new folder
 2. Open a docker shell and cd into `bst_avl_testcase_builder`
 3. Running the testcases:
    - `make` - Runs bst and avl testcases (Be sure to scroll up to see output of bst testcases)
